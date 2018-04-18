@@ -20,10 +20,30 @@
 #include <iostream>
 using namespace std;
 
+/* colors! http://www.codebuilder.me/2014/01/color-terminal-text-in-c/ */
+#define RESET   "\033[0m"
+#define BLACK   "\033[30m"      /* Black */
+#define RED     "\033[31m"      /* Red */
+#define GREEN   "\033[32m"      /* Green */
+#define YELLOW  "\033[33m"      /* Yellow */
+#define BLUE    "\033[34m"      /* Blue */
+#define MAGENTA "\033[35m"      /* Magenta */
+#define CYAN    "\033[36m"      /* Cyan */
+#define WHITE   "\033[37m"      /* White */
+#define BOLDBLACK   "\033[1m\033[30m"      /* Bold Black */
+#define BOLDRED     "\033[1m\033[31m"      /* Bold Red */
+#define BOLDGREEN   "\033[1m\033[32m"      /* Bold Green */
+#define BOLDYELLOW  "\033[1m\033[33m"      /* Bold Yellow */
+#define BOLDBLUE    "\033[1m\033[34m"      /* Bold Blue */
+#define BOLDMAGENTA "\033[1m\033[35m"      /* Bold Magenta */
+#define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
+#define BOLDWHITE   "\033[1m\033[37m"      /* Bold White */
+
 Display::Display(Player *player, Map *map)
 {
     this->player = player; 
     this->map = map; 
+	this->player_icon = player->getIcon();
 }
 
 void Display::refresh()
@@ -46,7 +66,13 @@ void Display::showMap()
     for (int y=0; y<dimensions.y; y++){
         for (int x=0; x<dimensions.x; x++){
             xy location(x,y);
-            cout << map->getCharacter(location);
+            char c = map->getCharacter(location);
+			if (c == player_icon){
+				cout << RED << c;
+			}
+			else {
+				cout << RESET << c;
+			}
         }
         cout << endl;
     }

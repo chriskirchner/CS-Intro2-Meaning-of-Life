@@ -7,7 +7,7 @@
 Welcome to the Meaning of Life Game, where you turn questions into a key to unlock the 
 meaning of life.  Beware of the evil Answers ("@") that steal away questions.
 
-## HOW TO 
+## Directions
 Walk through all the rooms to collect questions.
 The second to last room will unlock all rooms that
 close behind you, except for the very last room.
