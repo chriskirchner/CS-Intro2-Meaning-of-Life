@@ -17,6 +17,10 @@ Pick up the key and use it to open up the door to
 the last room where you will find the meaning of
 life, blah.  Goodluck!
 
+## Assignment Requirements
+
+[Requirements](FinalProject.pdf)
+
 ## Link to Assignment
 
 [Meaning of Life](http://159.89.136.195:3000/a/YycHdFEdoswKm4USz6akxxhzA)
