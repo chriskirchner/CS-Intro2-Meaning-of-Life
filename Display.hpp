@@ -29,6 +29,7 @@ class Display
     private:
         Map *map;
         Player *player;
+	char player_icon;
     public:
         Display(Player*,Map*);
         void refresh();
