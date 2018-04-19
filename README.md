@@ -11,7 +11,7 @@ Walk through all the rooms to collect questions. Beware of the evil Answers, "@"
 The second to last room will unlock all rooms that
 close behind you, except for the very last room.
 To unlock the last room, you need to go back to the first
-room with 6 questions and get the key of life, "*".
+room with 6 questions and get the key of meaning, "*".
 Use the key to unlock the last room and find the meaning of
 life.  Goodluck!
 
